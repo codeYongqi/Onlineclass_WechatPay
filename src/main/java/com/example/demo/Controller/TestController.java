@@ -1,6 +1,7 @@
 package com.example.demo.Controller;
 
 import com.example.demo.config.WechatConifg;
+import com.example.demo.mapper.VideoMapper;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
@@ -19,6 +20,14 @@ public class TestController {
     @RequestMapping("wechatConfig")
     public WechatConifg wechatConifg(){
         return wechatConifg;
+    }
+
+    @Autowired
+    private VideoMapper videoMapper;
+
+    @RequestMapping("testDB")
+    public Object testDB(){
+        return  videoMapper.findAll();
     }
 
 }
