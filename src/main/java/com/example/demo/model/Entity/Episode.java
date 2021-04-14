@@ -1,4 +1,4 @@
-package com.example.demo.model.entity;
+package com.example.demo.model.Entity;
 
 
 import java.io.Serializable;
