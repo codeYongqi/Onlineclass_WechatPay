@@ -32,4 +32,9 @@ public class VideoServiceImpl implements VideoService {
     public int delete(int id) {
         return videoMapper.delete(id);
     }
+
+    @Override
+    public int save(Video video) {
+        return videoMapper.save(video);
+    }
 }
