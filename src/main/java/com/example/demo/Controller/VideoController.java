@@ -37,38 +37,4 @@ public class VideoController {
         return videoService.findById(videoId);
     }
 
-    /**
-     * 通过id删除视频
-     * @param videoId
-     * @return
-     */
-    @DeleteMapping("deleteById")
-    public int deleteById(@RequestParam(value = "video_id") int videoId){
-        return videoService.delete(videoId);
-    }
-
-    /**
-     * 更新视频信息
-     * @param video
-     * @return
-     */
-    @PutMapping("update")
-    public int update(@RequestBody Video video){
-        return videoService.update(video);
-    }
-
-    /**
-     * 插入新的视频
-     * @param title
-     * @return
-     */
-    @PostMapping("save")
-    public int save(@RequestParam(value = "title") String title){
-        Video video = new Video();
-        video.setTitle(title);
-        int rows = videoService.save(video);
-        System.out.println(video.getId());
-        return rows;
-    }
-
 }

@@ -17,7 +17,7 @@ public interface VideoMapper {
     @Select("select * from video where id = #{id}")
     Video findById(int id);
 
-    @Update("update video set title = #{title} where id = #{id}")
+    @Update("update video set title = #{title} ,summary = #{summary} where id = #{id}")
     int update(Video video);
 
     @Delete("delete from video where id = #{id}")
