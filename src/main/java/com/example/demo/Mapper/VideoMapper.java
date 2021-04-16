@@ -8,9 +8,6 @@ import java.util.List;
 public interface VideoMapper {
 
     @Select("select * from video")
-    @Results({
-            @Result(column = "cover_img",property = "coverImg")
-    })
     List<Video> findAll();
 
     @Select("select * from video where id = #{id}")

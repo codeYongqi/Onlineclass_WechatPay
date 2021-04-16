@@ -2,8 +2,14 @@ package com.example.demo.Controller;
 
 import com.example.demo.Service.VideoService;
 import com.example.demo.model.Entity.Video;
+import com.github.pagehelper.PageHelper;
+import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.*;
+
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
 
 /**
  * @author zhuyongqi
@@ -24,7 +30,15 @@ public class VideoController {
     @GetMapping("pageVideo")
     public Object pageVideo(@RequestParam(value = "page",defaultValue = "1")int page,
                             @RequestParam(value = "size",defaultValue = "10")int size){
-        return videoService.findAll();
+        PageHelper.startPage(page,size); 
+        List<Video> list = videoService.findAll();
+        PageInfo<Video> pageInfo = new PageInfo<>(list);
+        Map<String,Object> data = new HashMap<>();
+        data.put("total_size",pageInfo.getTotal());
+        data.put("total_page",pageInfo.getPages());
+        data.put("current_page",page);
+        data.put("data",list);
+        return data;
     }
 
     /**
