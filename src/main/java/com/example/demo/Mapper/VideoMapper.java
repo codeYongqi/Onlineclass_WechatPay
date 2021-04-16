@@ -23,6 +23,7 @@ public interface VideoMapper {
     @Delete("delete from video where id = #{id}")
     int delete(int id);
 
-    @PostMapping("insert into video (title) values (#{title})")
+    @Insert("insert into video (title) values (#{title})")
+    @Options(useGeneratedKeys = true,keyProperty = "id",keyColumn = "id")
     int save(Video video);
 }
