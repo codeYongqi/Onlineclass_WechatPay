@@ -1,9 +1,8 @@
 package com.example.demo.Mapper;
 
+import com.example.demo.Provider.VideoProvider;
 import com.example.demo.model.Entity.Video;
 import org.apache.ibatis.annotations.*;
-import org.springframework.web.bind.annotation.PostMapping;
-
 import java.util.List;
 
 public interface VideoMapper {
@@ -17,7 +16,8 @@ public interface VideoMapper {
     @Select("select * from video where id = #{id}")
     Video findById(int id);
 
-    @Update("update video set title = #{title} ,summary = #{summary} where id = #{id}")
+    //@Update("update video set title = #{title} ,summary = #{summary},view_num=#{viewNum} where id = #{id}")
+    @UpdateProvider(value = VideoProvider.class,method = "updateVideo")
     int update(Video video);
 
     @Delete("delete from video where id = #{id}")
