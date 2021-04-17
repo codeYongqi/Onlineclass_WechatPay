@@ -2,6 +2,7 @@ package com.example.demo.Controller;
 
 import com.example.demo.Service.VideoService;
 import com.example.demo.model.Entity.Video;
+import com.example.demo.utils.JsonData;
 import com.github.pagehelper.PageHelper;
 import com.github.pagehelper.PageInfo;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -48,7 +49,7 @@ public class VideoController {
      */
     @GetMapping("findById")
     public Object findById(@RequestParam(value = "video_id") int videoId){
-        return videoService.findById(videoId);
+        return JsonData.buildSuccess(videoService.findById(videoId));
     }
 
 }
