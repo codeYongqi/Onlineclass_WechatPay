@@ -9,8 +9,10 @@ import org.apache.http.client.methods.HttpPost;
 import org.apache.http.entity.StringEntity;
 import org.apache.http.impl.client.CloseableHttpClient;
 import org.apache.http.impl.client.HttpClients;
+import org.apache.http.util.EntityUtils;
 
 import java.util.HashMap;
+import java.util.Iterator;
 import java.util.Map;
 public class HttpUtils {
 
@@ -28,16 +30,56 @@ public class HttpUtils {
                 .setConnectionRequestTimeout(5000)
                 .setConnectTimeout(5000)
                 .setSocketTimeout(5000)
+                .setRedirectsEnabled(true)
                 .build();
 
         HttpGet httpGet = new HttpGet(url);
+        httpGet.setHeader("Accept","application/json");
+        httpGet.setConfig(requestConfig);
 
         try (CloseableHttpClient httpClient = HttpClients.createDefault();){
              HttpResponse response = httpClient.execute(httpGet);
              if(response.getStatusLine().getStatusCode() == 200){
-                 String jsonResult = response.getEntity().toString();
-                 map = gson.fromJson(jsonResult,HashMap.class);
+                 String jsonResult = EntityUtils.toString(response.getEntity());
+                 map = gson.fromJson(jsonResult,Map.class);
              }
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        return map;
+    }
+
+    /**
+     * 封装带header的头请求
+     * @param url
+     * @param headers
+     * @return
+     */
+    public static Map<String,Object> doGetWithHeaders(String url,Map<String,String> headers){
+        Map<String,Object> map = new HashMap<>();
+
+        RequestConfig requestConfig = RequestConfig.custom()
+                .setConnectionRequestTimeout(5000)
+                .setConnectTimeout(5000)
+                .setSocketTimeout(5000)
+                .setRedirectsEnabled(true)
+                .build();
+
+        HttpGet httpGet = new HttpGet(url);
+        httpGet.setHeader("Accept","application/json");
+        Iterator<Map.Entry<String,String>> iterator = headers.entrySet().iterator();
+        while (iterator.hasNext()){
+            Map.Entry<String,String> entry = iterator.next();
+            httpGet.setHeader(entry.getKey(),entry.getValue());
+        }
+        httpGet.setConfig(requestConfig);
+
+        try (CloseableHttpClient httpClient = HttpClients.createDefault();){
+            HttpResponse response = httpClient.execute(httpGet);
+            if(response.getStatusLine().getStatusCode() == 200){
+                String jsonResult = EntityUtils.toString(response.getEntity());
+                map = gson.fromJson(jsonResult,Map.class);
+            }
         } catch (Exception e) {
             e.printStackTrace();
         }

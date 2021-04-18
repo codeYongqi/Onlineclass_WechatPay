@@ -1,6 +1,7 @@
 package com.example.demo.Controller;
 
 import com.example.demo.Config.GithubConfig;
+import com.example.demo.Service.UserService;
 import com.example.demo.utils.JsonData;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
@@ -18,6 +19,9 @@ public class GithubController {
     @Autowired
     private GithubConfig githubConfig;
 
+    @Autowired
+    private UserService userService;
+
     @GetMapping("login")
     @ResponseBody
     public Object githubLogin(@RequestParam("state")String state){
@@ -29,7 +33,7 @@ public class GithubController {
     @GetMapping("/user/callback")
     public void githubCallback(@RequestParam("code") String code,
                                String state, HttpServletResponse response){
-
+        userService.saveGithubUser(code);
 
     }
 }
