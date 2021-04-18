@@ -3,7 +3,6 @@ package com.example.demo.Interceptor;
 import com.example.demo.utils.JwtUtils;
 import com.google.gson.Gson;
 import io.jsonwebtoken.Claims;
-import org.apache.http.HttpResponse;
 import org.springframework.web.servlet.HandlerInterceptor;
 import org.springframework.web.servlet.ModelAndView;
 
@@ -24,10 +23,10 @@ public class LoginInterceptor implements HandlerInterceptor {
             Claims claims = JwtUtils.checkToken(accessToken);
             if (claims != null) {
                 Integer userId = (Integer) claims.get("id");
-                String usrName = (String) claims.get("name");
+                String userName = (String) claims.get("name");
 
                 request.setAttribute("user_id",userId);
-                request.setAttribute("name",usrName);
+                request.setAttribute("name",userName);
 
                 return true;
             }

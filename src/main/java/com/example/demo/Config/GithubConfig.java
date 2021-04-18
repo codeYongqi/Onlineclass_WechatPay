@@ -21,7 +21,7 @@ public class GithubConfig {
 
     private final String GITHUB_LOGIN = "https://github.com/login/oauth/authorize?client_id=%s&redirect_uri=%s&state=%s";
 
-    private String GITHUB_ACCESS_TOKEN_URL = "https://github.com/login/oauth/access_token?client_id=%s&client_secret=%s&code=%s";
+    private String GITHUB_ACCESS_TOKEN_URL = "https://github.com/login/oauth/access_token?client_id=%s&client_secret=%s&code=%s&redirect_uri=%s";
 
     private String GITHUB_USERINFO_URL = "https://api.github.com/user?";
 

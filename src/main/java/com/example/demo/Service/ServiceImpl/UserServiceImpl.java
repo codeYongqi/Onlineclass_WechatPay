@@ -21,11 +21,12 @@ public class UserServiceImpl implements UserService {
     private UserMapper userMapper;
 
     @Override
-    public User saveGithubUser(String code) {
+    public User saveGithubUser(String code,String state) {
         String accessTokenUrl = String.format(githubConfig.getGITHUB_ACCESS_TOKEN_URL(),
                 githubConfig.getClientId(),
                 githubConfig.getClientSecret(),
-                code);
+                code,
+                githubConfig.getRedirectUrl());
         Map<String,Object> baseMap = HttpUtils.doGet(accessTokenUrl);
         if(baseMap == null || baseMap.isEmpty()) return null;
         String authToken = (String) baseMap.get("access_token");
