@@ -1,8 +1,10 @@
 package com.example.demo.model.Entity;
 
 
-import java.io.Serializable;
+import lombok.Data;
 
+import java.io.Serializable;
+@Data
 public class User implements Serializable {
 
   private Integer id;
@@ -14,7 +16,8 @@ public class User implements Serializable {
   private Integer sex;
   private String city;
   private java.util.Date createTime;
-
+  private String email;
+  private Double githubId;
 
   public Integer getId() {
     return id;
