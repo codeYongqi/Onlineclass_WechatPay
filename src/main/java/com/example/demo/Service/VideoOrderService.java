@@ -5,5 +5,5 @@ import com.example.demo.model.Entity.VideoOrder;
 
 public interface VideoOrderService {
 
-    VideoOrder save(VideoOrderDto videoOrderDto);
+    String save(VideoOrderDto videoOrderDto);
 }

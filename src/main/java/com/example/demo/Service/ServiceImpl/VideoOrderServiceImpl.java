@@ -16,10 +16,7 @@ import org.apache.ibatis.annotations.Insert;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import java.util.Date;
-import java.util.Map;
-import java.util.SortedMap;
-import java.util.TreeMap;
+import java.util.*;
 
 @Service
 public class VideoOrderServiceImpl implements VideoOrderService {
@@ -36,7 +33,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
     private WechatConifg wechatConifg;
 
     @Override
-    public VideoOrder save(VideoOrderDto videoOrderDto) {
+    public  String save(VideoOrderDto videoOrderDto) {
 
         Video video = videoMapper.findById(videoOrderDto.getVideoId());
 
@@ -59,12 +56,9 @@ public class VideoOrderServiceImpl implements VideoOrderService {
 
         videoOrderMapper.insert(videoOrder);
 
-        unifiedOrder(videoOrder);
-        //获取codeUrl
+        String QRCodeUrl = unifiedOrder(videoOrder);
 
-        //生成二维码
-
-        return null;
+        return QRCodeUrl;
     }
 
     private String unifiedOrder(VideoOrder videoOrder) {
@@ -98,7 +92,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
         String orderStr = HttpUtils.doPost(wechatConifg.getUNIFIED_ORDER_URL(),payXml);
         if(orderStr == null) return null;
 
-        Map<String,String> map;
+        Map<String,String> map = new HashMap<>();
 
         try {
              map = WechatPayUtils.xmlToMap(orderStr);
@@ -107,7 +101,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
         }
         //return orderStr != null ? orderStr : null;
 
-        System.out.println();
-        return null;
+        String QRCodeUrl = map.get("code_url");
+        return QRCodeUrl;
     }
 }
