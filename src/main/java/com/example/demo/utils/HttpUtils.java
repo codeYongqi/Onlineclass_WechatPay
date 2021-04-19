@@ -67,6 +67,7 @@ public class HttpUtils {
 
         HttpGet httpGet = new HttpGet(url);
         httpGet.setHeader("Accept","application/json");
+
         Iterator<Map.Entry<String,String>> iterator = headers.entrySet().iterator();
         while (iterator.hasNext()){
             Map.Entry<String,String> entry = iterator.next();

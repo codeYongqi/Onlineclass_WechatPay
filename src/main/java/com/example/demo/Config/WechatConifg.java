@@ -31,6 +31,18 @@ public class WechatConifg {
     @Value("${wxopen.redirect_url}")
     private String openRedirectUrl;
 
+    @Value("${wxpay.mer_id}")
+    private String mchId;
+
+    @Value("${wxpay.key}")
+    private String key;
+
+    @Value("${wxpay.callback}")
+    private String callbackUrl;
+
     //微信平台二维码连接
-    private final String OPEN_QRCODE_URL= "https://open.weixin.qq.com/connect/qrconnect?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_login&state=%s#wechat_redirect";
+    private final String OPEN_QRCODE_URL = "https://open.weixin.qq.com/connect/qrconnect?appid=%s&redirect_uri=%s&response_type=code&scope=snsapi_login&state=%s#wechat_redirect";
+
+    private final String UNIFIED_ORDER_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
+
 }
