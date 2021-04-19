@@ -40,6 +40,6 @@ public interface VideoOrderMapper {
 
     //通过订单流水号更新订单
     @Update("update video_order set state = #{state} ,notify_time = #{notifyTime},openid=#{openid} " +
-            "where out_trade_no = #{outTradeNo}")
+            "where out_trade_no = #{outTradeNo} and state = 0 and del = 0")
     int updateVideoOrderByOutTradeNo(VideoOrder videoOrder);
 }
