@@ -111,7 +111,7 @@ public class HttpUtils {
            HttpResponse response= httpClient.execute(httpPost);
             HttpEntity  httpEntity =response.getEntity();
             if(response.getStatusLine().getStatusCode() == 200){
-                String result = httpEntity.toString();
+                String result = EntityUtils.toString(response.getEntity());
                 return  result;
             }
         }catch (Exception e){

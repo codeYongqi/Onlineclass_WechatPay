@@ -17,6 +17,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.Date;
+import java.util.Map;
 import java.util.SortedMap;
 import java.util.TreeMap;
 
@@ -72,7 +73,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
         SortedMap<String,String> parms = new TreeMap<>();
 
         parms.put("appid",wechatConifg.getAppId());
-        parms.put("ch_id",wechatConifg.getMchId());
+        parms.put("mch_id",wechatConifg.getMchId());
         parms.put("nonce_str",CommonUtils.geneUUID());
         parms.put("body",videoOrder.getVideoTitle());
         parms.put("out_trade_no",videoOrder.getOutTradeNo());
@@ -94,8 +95,19 @@ public class VideoOrderServiceImpl implements VideoOrderService {
         }
 
        //下单
-        HttpUtils.doPost(wechatConifg.getUNIFIED_ORDER_URL());
+        String orderStr = HttpUtils.doPost(wechatConifg.getUNIFIED_ORDER_URL(),payXml);
+        if(orderStr == null) return null;
 
+        Map<String,String> map;
 
+        try {
+             map = WechatPayUtils.xmlToMap(orderStr);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+        //return orderStr != null ? orderStr : null;
+
+        System.out.println();
+        return null;
     }
 }

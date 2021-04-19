@@ -23,7 +23,8 @@ public class OrderController {
     @GetMapping("add")
     public JsonData saveOrder(@RequestParam(value = "video_id") int videoId,
                               HttpServletRequest servletRequest){
-        String ip = IpUtils.getIpAddr(servletRequest);
+       // String ip = IpUtils.getIpAddr(servletRequest);
+       String ip = "120.25.1.43";
         int userId = 1;
         VideoOrderDto videoOrderDto = new VideoOrderDto();
         videoOrderDto.setUserId(userId);
