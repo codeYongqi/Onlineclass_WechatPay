@@ -13,13 +13,21 @@ import com.example.demo.utils.CommonUtils;
 import com.example.demo.utils.HttpUtils;
 import com.example.demo.utils.WechatPayUtils;
 import org.apache.ibatis.annotations.Insert;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
+import org.springframework.transaction.annotation.Propagation;
+import org.springframework.transaction.annotation.Transactional;
 
 import java.util.*;
 
 @Service
 public class VideoOrderServiceImpl implements VideoOrderService {
+
+    private Logger logger= LoggerFactory.getLogger(this.getClass());
+    private Logger dataLogger = LoggerFactory.getLogger("dataLogger");
+
     @Autowired
     private VideoOrderMapper videoOrderMapper;
 
@@ -33,7 +41,10 @@ public class VideoOrderServiceImpl implements VideoOrderService {
     private WechatConifg wechatConifg;
 
     @Override
+    @Transactional(propagation = Propagation.REQUIRED)
     public  String save(VideoOrderDto videoOrderDto) {
+
+        dataLogger.info("module = video_order ` api = save ` user_id = {}",videoOrderDto.getUserId());
 
         Video video = videoMapper.findById(videoOrderDto.getVideoId());
 
@@ -72,7 +83,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
     }
 
     private String unifiedOrder(VideoOrder videoOrder) {
-
+        int i = 1/0;
         //生成签名
         SortedMap<String,String> parms = new TreeMap<>();
 
@@ -114,4 +125,5 @@ public class VideoOrderServiceImpl implements VideoOrderService {
         String QRCodeUrl = map.get("code_url");
         return QRCodeUrl;
     }
+
 }

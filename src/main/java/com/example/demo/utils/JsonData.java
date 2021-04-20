@@ -18,6 +18,10 @@ public class JsonData {
         this.data = data;
     }
 
+    public JsonData(int code,String message){
+        this.code = code;
+        this.message = message;
+    }
     public static JsonData buildSuccess(Object data){
         return new JsonData(1,data);
     }
@@ -26,13 +30,8 @@ public class JsonData {
         return new JsonData(1,data,message);
     }
 
-    public static JsonData buildError(Object data){
-        return new JsonData(-1,data);
+    public static JsonData buildError(int code,String message){
+        return new JsonData(code,message);
     }
-
-    public static JsonData buildError(Object data,String message){
-        return new JsonData(-1,data,message);
-    }
-
 
 }
