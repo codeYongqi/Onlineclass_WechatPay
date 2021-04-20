@@ -61,6 +61,16 @@ public class VideoOrderServiceImpl implements VideoOrderService {
         return QRCodeUrl;
     }
 
+    @Override
+    public VideoOrder findByOutTradeNo(String outTradeNo) {
+        return videoOrderMapper.findByOutTradeNo(outTradeNo);
+    }
+
+    @Override
+    public int updateOrderByOutTradeNo(VideoOrder videoOrder) {
+        return videoOrderMapper.updateVideoOrderByOutTradeNo(videoOrder);
+    }
+
     private String unifiedOrder(VideoOrder videoOrder) {
 
         //生成签名

@@ -6,4 +6,8 @@ import com.example.demo.model.Entity.VideoOrder;
 public interface VideoOrderService {
 
     String save(VideoOrderDto videoOrderDto);
+
+    VideoOrder findByOutTradeNo(String outTradeNo);
+
+    int updateOrderByOutTradeNo(VideoOrder videoOrder);
 }

@@ -16,10 +16,7 @@ import javax.xml.transform.stream.StreamResult;
 import java.io.ByteArrayInputStream;
 import java.io.InputStream;
 import java.io.StringWriter;
-import java.util.HashMap;
-import java.util.Iterator;
-import java.util.Map;
-import java.util.SortedMap;
+import java.util.*;
 
 /**
  * 微信支付工具类 ,map => xml, xml => map, 生成签名
@@ -141,6 +138,27 @@ public class WechatPayUtils {
 
         String wechatPaySign = parms.get("sign").toUpperCase();
 
+        return sign.equals(wechatPaySign);
+    }
+
+
+    public static SortedMap<String,String> getSortedMap(Map<String,String> map){
+        SortedMap<String,String> sortedMap = new TreeMap<>();
+        Iterator<String> it = map.keySet().iterator();
+
+        while (it.hasNext()){
+            String key = it.next();
+            String value = map.get(key);
+            String temp = "";
+            if(value!= null) temp=value.trim();
+            sortedMap.put(key,temp);
+        }
+        return sortedMap;
+    }
+
+    public static boolean isCorrectedSign(SortedMap<String,String> parms,String key){
+        String sign = createSign(parms,key);
+        String wechatPaySign = parms.get("sign").toUpperCase();
         return sign.equals(wechatPaySign);
     }
     /**

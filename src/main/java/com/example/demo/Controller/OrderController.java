@@ -39,7 +39,7 @@ public class OrderController {
                               HttpServletRequest servletRequest, HttpServletResponse servletResponse) throws Exception {
        // String ip = IpUtils.getIpAddr(servletRequest);
         String ip = "120.25.1.43";
-        int userId = 1;
+        int userId = 2;
         VideoOrderDto videoOrderDto = new VideoOrderDto();
         videoOrderDto.setUserId(userId);
         videoOrderDto.setVideoId(videoId);
@@ -57,15 +57,8 @@ public class OrderController {
         BitMatrix bitMatrix = new MultiFormatWriter().encode(QRCodeUrl, BarcodeFormat.QR_CODE
                 ,400,400,hints);
 
-        File f = ResourceUtils.getFile("classpath:gta5.jpg");
-
-        byte[] all = new byte[Math.toIntExact(f.length())];
-        FileInputStream inputStream = new FileInputStream(f);
-        inputStream.read(all);
-
         OutputStream outputStream = servletResponse.getOutputStream();
-        outputStream.write(all);
-        //MatrixToImageWriter.writeToStream(bitMatrix,"png",outputStream);
+        MatrixToImageWriter.writeToStream(bitMatrix,"png",outputStream);
 
     }
 }
