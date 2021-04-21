@@ -2,6 +2,7 @@ package com.example.demo.Controller;
 
 import com.example.demo.Dto.VideoOrderDto;
 import com.example.demo.Service.VideoOrderService;
+import com.example.demo.utils.IpUtils;
 import com.google.zxing.BarcodeFormat;
 import com.google.zxing.EncodeHintType;
 import com.google.zxing.MultiFormatWriter;
@@ -37,9 +38,10 @@ public class OrderController {
     @GetMapping("add")
     public void saveOrder(@RequestParam(value = "video_id") int videoId,
                               HttpServletRequest servletRequest, HttpServletResponse servletResponse) throws Exception {
-       // String ip = IpUtils.getIpAddr(servletRequest);
-        String ip = "120.25.1.43";
-        int userId = 2;
+        String ip = IpUtils.getIpAddr(servletRequest);
+       // String ip = "120.25.1.43";
+       // int userId = 2;
+        int userId = (int) servletRequest.getAttribute("user_id");
         VideoOrderDto videoOrderDto = new VideoOrderDto();
         videoOrderDto.setUserId(userId);
         videoOrderDto.setVideoId(videoId);

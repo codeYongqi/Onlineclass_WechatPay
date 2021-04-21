@@ -1,0 +1,176 @@
+2021-04-21 13:31:11.483 INFO [Thread-53]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:11.515 INFO [Thread-53]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:31:11.832 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:31:11.844 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:31:12.244 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:31:12.245 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:12.245 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:31:12.245 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:31:12.254 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:31:12.255 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 405 ms
+2021-04-21 13:31:12.381 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:12.450 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:31:12.464 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:12.466 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:31:12.471 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.685 seconds (JVM running for 25788.038)
+2021-04-21 13:31:12.473 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:31:18.940 INFO [Thread-58]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:18.941 INFO [Thread-58]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:31:19.163 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:31:19.164 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:31:19.411 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:31:19.412 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:19.413 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:31:19.413 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:31:19.425 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:31:19.425 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 257 ms
+2021-04-21 13:31:19.552 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:19.625 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:31:19.641 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:19.644 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:31:19.650 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.52 seconds (JVM running for 25795.216)
+2021-04-21 13:31:19.652 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:31:31.173 INFO [Thread-63]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:31.173 INFO [Thread-63]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:31:31.307 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:31:31.307 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:31:31.578 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:31:31.579 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:31.579 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:31:31.579 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:31:31.589 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:31:31.590 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 276 ms
+2021-04-21 13:31:31.701 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:31.762 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:31:31.776 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:31.779 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:31:31.783 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.513 seconds (JVM running for 25807.351)
+2021-04-21 13:31:31.785 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:31:38.247 INFO [Thread-68]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:38.247 INFO [Thread-68]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:31:38.373 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:31:38.374 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:31:38.670 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:31:38.671 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:38.672 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:31:38.672 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:31:38.687 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:31:38.688 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 311 ms
+2021-04-21 13:31:38.831 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:38.915 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:31:38.938 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:38.941 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:31:38.947 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.609 seconds (JVM running for 25814.515)
+2021-04-21 13:31:38.949 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:31:40.359 INFO [Thread-73]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:40.361 INFO [Thread-73]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:31:40.559 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:31:40.560 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:31:40.830 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:31:40.830 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:40.831 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:31:40.831 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:31:40.840 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:31:40.840 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 277 ms
+2021-04-21 13:31:40.980 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:41.056 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:31:41.070 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:41.072 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:31:41.076 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.554 seconds (JVM running for 25816.644)
+2021-04-21 13:31:41.078 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:31:53.630 INFO [Thread-78]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:53.632 INFO [Thread-78]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:31:53.803 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:31:53.803 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:31:54.123 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:31:54.124 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:54.125 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:31:54.125 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:31:54.133 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:31:54.134 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 325 ms
+2021-04-21 13:31:54.299 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:54.366 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:31:54.382 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:54.384 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:31:54.389 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.63 seconds (JVM running for 25829.957)
+2021-04-21 13:31:54.390 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:31:55.797 INFO [Thread-83]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:55.798 INFO [Thread-83]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:31:55.926 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:31:55.927 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:31:56.138 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:31:56.139 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:56.140 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:31:56.140 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:31:56.149 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:31:56.149 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 217 ms
+2021-04-21 13:31:56.262 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:31:56.322 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:31:56.335 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:31:56.338 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:31:56.342 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.445 seconds (JVM running for 25831.911)
+2021-04-21 13:31:56.344 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:32:43.300 INFO [Thread-88]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:32:43.301 INFO [Thread-88]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:32:43.464 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:32:43.465 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:32:43.725 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:32:43.726 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:32:43.726 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:32:43.727 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:32:43.738 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:32:43.738 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 271 ms
+2021-04-21 13:32:43.829 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:32:43.873 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:32:43.885 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:32:43.887 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:32:43.891 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.456 seconds (JVM running for 25879.462)
+2021-04-21 13:32:43.892 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:33:21.713 INFO [Thread-93]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:33:21.714 INFO [Thread-93]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:33:21.855 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:33:21.856 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:33:22.088 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:33:22.089 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:33:22.089 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:33:22.090 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:33:22.099 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:33:22.100 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 242 ms
+2021-04-21 13:33:22.221 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:33:22.309 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:33:22.328 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:33:22.330 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:33:22.338 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.509 seconds (JVM running for 25917.911)
+2021-04-21 13:33:22.340 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:34:34.564 INFO [Thread-98]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:34:34.567 INFO [Thread-98]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:34:34.762 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:34:34.762 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:34:35.123 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:34:35.124 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:34:35.124 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:34:35.125 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:34:35.137 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:34:35.137 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 372 ms
+2021-04-21 13:34:35.341 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:34:35.614 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:34:35.643 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:34:35.646 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:34:35.654 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.929 seconds (JVM running for 25991.231)
+2021-04-21 13:34:35.658 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged
+2021-04-21 13:34:37.050 INFO [Thread-103]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.shutdown:218 -Shutting down ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:34:37.051 INFO [Thread-103]com.alibaba.druid.pool.DruidDataSource.close:2039 -{dataSource-0} closing ...
+2021-04-21 13:34:37.320 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarting:55 -Starting OnlineclassWechatPayApplication using Java 1.8.0_211 on promote.cache-dns.local with PID 53274 (/Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay/target/classes started by zhuyongqi in /Users/zhuyongqi/Projects/IdeaProjects/onlineclass_wechatPay)
+2021-04-21 13:34:37.321 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStartupProfileInfo:662 -No active profile set, falling back to default profiles: default
+2021-04-21 13:34:37.694 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.initialize:108 -Tomcat initialized with port(s): 8080 (http)
+2021-04-21 13:34:37.695 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Initializing ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:34:37.696 INFO [restartedMain]org.apache.catalina.core.StandardService.log:173 -Starting service [Tomcat]
+2021-04-21 13:34:37.696 INFO [restartedMain]org.apache.catalina.core.StandardEngine.log:173 -Starting Servlet engine: [Apache Tomcat/9.0.44]
+2021-04-21 13:34:37.706 INFO [restartedMain]o.a.c.core.ContainerBase.[Tomcat-1].[localhost].[/].log:173 -Initializing Spring embedded WebApplicationContext
+2021-04-21 13:34:37.706 INFO [restartedMain]o.s.b.w.s.context.ServletWebServerApplicationContext.prepareWebApplicationContext:289 -Root WebApplicationContext: initialization completed in 378 ms
+2021-04-21 13:34:37.876 INFO [restartedMain]o.s.scheduling.concurrent.ThreadPoolTaskExecutor.initialize:181 -Initializing ExecutorService 'applicationTaskExecutor'
+2021-04-21 13:34:37.978 INFO [restartedMain]o.s.boot.devtools.autoconfigure.OptionalLiveReloadServer.startServer:58 -LiveReload server is running on port 35729
+2021-04-21 13:34:37.997 INFO [restartedMain]org.apache.coyote.http11.Http11NioProtocol.log:173 -Starting ProtocolHandler ["http-nio-8080"]
+2021-04-21 13:34:38.001 INFO [restartedMain]o.s.boot.web.embedded.tomcat.TomcatWebServer.start:220 -Tomcat started on port(s): 8080 (http) with context path ''
+2021-04-21 13:34:38.010 INFO [restartedMain]com.example.demo.OnlineclassWechatPayApplication.logStarted:61 -Started OnlineclassWechatPayApplication in 0.749 seconds (JVM running for 25993.587)
+2021-04-21 13:34:38.013 INFO [restartedMain]o.s.b.d.a.ConditionEvaluationDeltaLoggingListener.onApplicationEvent:63 -Condition evaluation unchanged

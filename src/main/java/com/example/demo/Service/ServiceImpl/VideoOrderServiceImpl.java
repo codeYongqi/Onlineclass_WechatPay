@@ -83,7 +83,7 @@ public class VideoOrderServiceImpl implements VideoOrderService {
     }
 
     private String unifiedOrder(VideoOrder videoOrder) {
-        int i = 1/0;
+
         //生成签名
         SortedMap<String,String> parms = new TreeMap<>();
 

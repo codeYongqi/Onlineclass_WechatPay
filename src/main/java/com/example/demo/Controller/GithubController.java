@@ -47,7 +47,6 @@ public class GithubController {
                     .toString();
 
             response.sendRedirect(RedirectUrl);
-            //response.sendRedirect("http://www.baidu.com");
         }
     }
 
